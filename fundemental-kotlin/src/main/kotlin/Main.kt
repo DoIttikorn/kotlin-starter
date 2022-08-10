@@ -21,6 +21,32 @@ fun main(args: Array<String>) {
     println(stringLength)
     val stringLength2 = getStringLength2("ittikorn Chawkamud")
     println(stringLength2)
+//    ---
+//    data class
+    val user1 = User("Akexorcist", 19, true)
+    println(user1.toString())
+    println(user1.hashCode())
+
+    val user2 = User("Akexorcist", 19, true)
+    println(user2.toString())
+    println(user2.hashCode())
+//  ---
+//    copy
+    val user = User("Akexorcist", 19, true)
+    val newUser = user.copy(name = "Black Lens")
+// user = User(name="Akexorcist", age=19, isAwesomeUser=true)
+// newUser = User(name="Black Lens", age=19, isAwesomeUser=true)
+    println("$user : $newUser")
+//    ---
+//    Destructuring Declarations
+    val (name1, age1, isAwesomeUser1) = user
+    println("name: $name1 , age: $age1 , isAwesomeUser : $isAwesomeUser1")
+//    ComponentN
+    val name = user.component1()
+    val age = user.component2()
+    val isAwesomeUser = user.component3()
+    println("get property by component -> $name , $age , $isAwesomeUser ")
+// name = "Akexorcist", age = 19, isAwesomeUser = true
 }
 
 //short functions
@@ -125,3 +151,6 @@ open class Shap
 class Rectangle(var height: Double, var length: Double) : Shap() {
     var perimeter = (height + length) * 2
 }
+
+//  data class จะจัดการ data ให้เราในการสร้าง modal
+data class User(var name: String, var age: Int, var isAwesomeUser: Boolean)
