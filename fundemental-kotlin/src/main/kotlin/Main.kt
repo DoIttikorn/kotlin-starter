@@ -1,8 +1,9 @@
+package main.kotlin
+
 fun main(args: Array<String>) {
+    mainCodeWars()
     println("Enter Two number")
-//    val (a,b) = readLine()!!.split(' ') // !! this operator use for NPE(NullPointerException).
-    // Try adding program arguments via Run/Debug configuration.
-    // Learn more about running applications: https://www.jetbrains.com/help/idea/running-applications.html.
+//    val (a,b) = readLine()!!.split(' ')  !! this operator use for NPE(NullPointerException).
 //    println("Program arguments: ${args.joinToString()}")
 //    println("Max number is : ${maxNum(a.toInt(), b.toInt())}")
 //    println("sum of $a and $b is ${sum(a.toInt(),b.toInt())}")
