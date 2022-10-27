@@ -20,7 +20,9 @@ fun number() {
     // no implicit widening conversions for numbers in Kotlin. For example
     // ไม่มีการเปิดขยายไปยัง type ขนาดอื่นที่ใกล้เคียงกันใน kotlin เช่น Double จะไม่เท่ากับ Int Long
     // ref https://kotlinlang.org/docs/numbers.html#explicit-number-conversions
-    fun printDouble(d: Double) { print(d) }
+    fun printDouble(d: Double) {
+        print(d)
+    }
 
     val i = 1
     val d = 1.0
@@ -29,5 +31,15 @@ fun number() {
     printDouble(d)
 //    printDouble(i) // Error: Type mismatch
 //    printDouble(f) // Error: Type mismatch
+
+    val l = 1L + 3 // Long + Int => Long
+
+//    types support conversions
+    //toByte(): Byte
+    //toShort(): Short
+    //toInt(): Int
+    //toLong(): Long
+    //toFloat(): Float
+    //toDouble(): Double
 
 }
