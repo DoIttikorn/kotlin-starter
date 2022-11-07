@@ -1,4 +1,4 @@
-package main.kotlin.components
+package main.kotlin.basic
 
 fun number() {
     var a = 1

@@ -1,8 +1,8 @@
 package main.kotlin
 
-import main.kotlin.components.number
-import main.kotlin.components.boolean
-import main.kotlin.components.characters
+import main.kotlin.basic.number
+import main.kotlin.basic.boolean
+import main.kotlin.basic.characters
 
 fun main(args: Array<String>) {
     number()
