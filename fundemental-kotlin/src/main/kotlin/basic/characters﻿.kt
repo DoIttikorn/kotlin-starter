@@ -16,4 +16,5 @@ fun characters() {
     println(aChar)
     println('\$') // Prints an extra newline character
     println('\uFF00')
+    println("${'\uFF00'} is a hex character")
 }
