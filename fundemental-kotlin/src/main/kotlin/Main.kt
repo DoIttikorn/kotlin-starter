@@ -1,10 +1,7 @@
 package main.kotlin
 
-import main.kotlin.basic.number
-import main.kotlin.basic.boolean
-import main.kotlin.basic.characters
-import main.kotlin.basic.string
+import main.kotlin.basic.*
 
 fun main(args: Array<String>) {
-    string()
+    arrayBasic()
 }
